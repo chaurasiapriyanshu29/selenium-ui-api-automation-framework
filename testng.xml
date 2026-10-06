@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Full suite: UI (3 browsers in parallel) + API.
+     parallel="tests"            -> every <test> runs at the same time
+     data-provider-thread-count  -> scenarios inside each <test> also run in parallel -->
+<suite name="SauceDemo Automation Suite" parallel="tests" thread-count="4" data-provider-thread-count="4">
+
+    <test name="UI - Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes><class name="com.framework.runners.TestRunner"/></classes>
+    </test>
+
+   <test name="UI - Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes><class name="com.framework.runners.TestRunner"/></classes>
+    </test>    
+
+</suite>

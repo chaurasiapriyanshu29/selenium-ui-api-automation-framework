@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <theme>standard</theme>
+        <encoding>UTF-8</encoding>
+        <documentTitle>SauceDemo Automation Report</documentTitle>
+        <reportName>SauceDemo - Selenium BDD Framework</reportName>
+        <timeStampFormat>yyyy-MM-dd HH:mm:ss</timeStampFormat>
+    </configuration>
+</extentreports>
